@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    
+</head>
+<body>
+    <header>
+
+        <div class="heading">
+          Booking Appointment App
+          
+        </div>
+        <nav>
+            <ul>
+                <form action="/user" method="POST" class="userb">
+                    <button type="submit" class="btn  navb">ADD USER</button>
+                </form>
+
+                <form action="/" method="POST" class="userb">
+                    <button type="submit" class="btn navb">USERS</button>
+                </form>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form class="form-control" action="/user" method="POST">
+            <div class="form-content">
+            <label for="user">Username:</label>
+            <input  type="text" name="user" id="user">
+        </div>
+            <br>
+            <div class="form-content">
+            <label for="phone">Phone:</label>
+             <input type="text" name="phone" id="phone">
+             </div>
+             <br>
+             <div class="form-content">
+             <label for="email">Email:</label>
+              <input type="text" name="email" id="email">
+
+              </div>
+
+             
+              <br>
+              <button type="submit" class="btn">Add user</button>
+        </form>
+    </main>
+    
+    
+</body>
+</html>
