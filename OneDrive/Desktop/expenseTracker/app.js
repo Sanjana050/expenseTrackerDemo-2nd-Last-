@@ -1,8 +1,13 @@
 const express=require('express');
 const app=express();
-
+const sequelize=require('./util/database')
 const bodyParser=require('body-parser');
+app.use(bodyParser.urlencoded({extended:false}))
 const routeUser=require('./router/signup');
 app.use(routeUser);
-
-app.listen(80);
+sequelize.sync().then((result)=>{
+    console.log(result);
+    app.listen(80);
+}).catch((err)=>{
+    console.log(err)
+})

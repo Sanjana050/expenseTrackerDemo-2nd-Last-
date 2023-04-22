@@ -22,7 +22,7 @@
             padding:1rem;
             
         }
-        #pass,#phone,#email{
+       #name, #password,#phone,#email{
             border-radius: .5rem;
             padding:.2rem;
             background: transparent;
@@ -56,14 +56,19 @@
 </head>
 <body>
    <form class="form-control" method="POST" action="/adduser">
+
     <div class="from-content">
-    <label for="email">Username</label>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div class="from-content">
+    <label for="email">Email</label>
     <input type="email" id="email" name="email" required>
 </div>
 
 <div class="from-content">
     <label for="password">Password</label>
-    <input type="password" id="pass" name="pass" required>
+    <input type="password" id="password" name="password" required>
 </div>
 <div class="from-content">
     <label for="phone">Phone no.</label>
